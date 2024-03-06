@@ -1,7 +1,7 @@
-# STAQ-DIC
+# STAQ-DIC 
 Current DIC post-processing methods can lead to errors in analyzing the deformation fields of complex geometries, near edges of samples, or objects with discontinuities. Therefore, an appropriate subset size and step size which are defined to create a grid mesh across the ROI are of significance for getting better spatial resolution on those areas near the edges. However, the delicate balance needed for optimal results is difficult to achieve manually.
 
-To address these limitations, we have developed a novel, automatic approach called the \textbf{S}patio\textbf{T}emporally \textbf{A}daptive \textbf{Q}uadtree Mesh (STAQ-) DIC method\cite{STAQ-DIC}. This method resolves deformation fields around complex geometries and discontinuities more accurately than conventional DIC post-processing algorithms by utilizing a spatially adaptive quadtree mesh generated from binary mask files to adjust the mesh resolution in areas of complex geometries or discontinuities.
+To address these limitations, we have developed a novel, automatic approach called the SpatioTemporally Adaptive Quadtree Mesh DIC method (STAQ-DIC). This method resolves deformation fields around complex geometries and discontinuities more accurately than conventional DIC post-processing algorithms by utilizing a spatially adaptive quadtree mesh generated from binary mask files to adjust the mesh resolution in areas of complex geometries or discontinuities.
 
 With a binary mask file as an input to define the region of interest in each image, STAQ-DIC uses a recursive error-estimating algorithm to adjust the spatial resolution of the subset mesh near areas of complex geometry or discontinuities, while leaving solid regions or areas with simple geometry with a lower spatial resolution. By selectively and automatically adjusting the resolution of the subset mesh, computational costs are saved while still yielding accurate results.With low computational costs and quick processing time, STAQ-DIC is an accurate and efficient method for resolving deformation fields in DIC images. Typically, each DIC image’s deformations can be resolved within seconds. For details about STAQ-DIC, please refer to our previous paper\cite{STAQ-DIC}.
 
@@ -17,12 +17,19 @@ Naturally, for use in conjunction with STAQ-DIC, the Segment Anything Model (SAM
 
 # Example
 
-# Segment Anything
+# Contact
+Feel free to contact me at jleu@utexas.edu
+
+# STAQ-DIC Citation/Resources
+https://github.com/jyang526843/STAQ-DIC
+
+https://doi.org/10.1007/s11340-022-00872-4
+
+# Segment Anything Citation/Resources
 https://segment-anything.com/
 
 https://github.com/facebookresearch/segment-anything
 
 https://doi.org/10.48550/arXiv.2304.02643
 
-# Contact
-Feel free to contact me at jleu@utexas.edu
+
