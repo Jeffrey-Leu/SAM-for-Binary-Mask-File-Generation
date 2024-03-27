@@ -15,7 +15,7 @@ Recently, Meta's Fundamental AI research (FAIR) developed Segment Anything, a pr
 
 Naturally, for use in conjunction with STAQ-DIC, the Segment Anything Model (SAM) has been adapted for use to segment the speckled DIC regions of DIC images. With an object mask overlaid on the DIC image, color thresholding methods can be used to extract binary mask files from the SAM output, and used as an input to STAQ-DIC for ROI definition over an entire DIC image sequence.
 
-![DIC](https://github.com/Jeffrey-Leu/SAM-for-Binary-Mask-File-Generation/assets/98000977/ddf8b1c5-16a6-489b-a76f-2e208217e3ac)
+![Intro](https://github.com/Jeffrey-Leu/SAM-for-Binary-Mask-File-Generation/assets/98000977/38b8413c-c123-45c6-b1d4-960dff4e95c8)
 
 # Setup
 
